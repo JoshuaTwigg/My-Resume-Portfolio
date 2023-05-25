@@ -16,9 +16,9 @@
         <a href="#" id="logo"  class="navbar-brand">T<span id="spanWhite">wigg</span></a>
         <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a href="#skills" class="nav-link">My skills</a></li>
-            <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio and contact</a></li>
+            <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
             <li class="nav-item"><a href="#education" class="nav-link">My education</a></li>
-            <li class="nav-item"><a href="#portfolio2" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact and portfolio link</a></li>
         </ul>
     </nav>
 
@@ -36,26 +36,38 @@
 
 
     <main class="about-me">
-        <h2 class="display-4">About Me</h2>
-        <p class="lead">
-            I enjoy being creative, self taught and building something great <br>from little to nothing and 
-            accomplishing a great task with a series of small actions.<br> 
-            taught myself how to play various instruments, music production and song writing
-            <br>
-            for personal projects. programming, amongst others and I am eager to learn more in these fields
-            <br>I am interested in philosophy and keen for new experiences
-        </p>
+      <div class="container" class="no-gutters">
+        <div class="row" class="no-gutters" >
+          <div class="col-sm" class="no-gutters">
+            <img src="./images/zzzz.png" id="myImage">
+          </div>
+          <div class="col-sm">
+            <h2 class="display-4">About<span id="abtText"> Me</span></h2>
+            <p class="lead" id="leade">
+              I enjoy being creative, self taught and building something great from little to nothing and 
+              accomplishing a great task with a series of small actions.
+              <br>
+              <br>
+              taught myself how to play various instruments, music production and song writing
+              for personal projects.
+              programming, amongst others and I am eager to learn more in these fields
+              I am interested in philosophy and keen for new experiences
+              <br>
+              </p>
+          </div>
+        </div>
+      </div>
     </main>   
         
 
-    <div>
+    <!-- <div>
         <picture>
-            <source media="(min-width: 650px)" srcset="images/5.5.jpg" class="img-fluid" width="100%" height="2px">
+            <source media="(min-width: 650px)" srcset="images/pic5.png" class="img-fluid" width="100%" height="2px">
             <img src="images/5.jpg" class="img-fluid" width="300px" height="300px">
 
         </picture>
 
-    </div>
+    </div> -->
 
 
     <article>
@@ -64,10 +76,10 @@
           <div class="galleryContainer">
               <img src="images/peakCafImg.PNG" width="300px" height="300px" class="img-fluid" alt="gallery image">
               <img src="images/netflix clone.PNG" width="300px" height="300px" class="img-fluid" alt="gallery image">
-              <img src="images/weather api 2.PNG" width="300px" height="300px" class="img-fluid" alt="gallery image">
+              <img src="images/ReactStore1.PNG" width="300px" height="300px" class="img-fluid" alt="gallery image">
               <img src="images/game.PNG" width="300px" height="300px" class="img-fluid" alt="gallery image">
               <img src="images/mamp.PNG" width="300px" height="300px" class="img-fluid" alt="gallery image">
-              <img src="images/furnitureStore.PNG" width="300px" height="300px" class="img-fluid" alt="gallery image">
+              <img src="images/weather api 2.PNG" width="300px" height="300px" class="img-fluid" alt="gallery image">
           </div>
         </div>
     </article>
@@ -120,27 +132,28 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6" id="border-one">
-                    <h2 class="display-4">Education</h2>
-                    <p class="lead">
-                        Bay Primary School <br><br>
-                        Fish Hoek High School <br><br>
-                        Matriculated in 2019<br><br>
-                       <br> N4 Electrical Engineering National Certificate in 2021
-                        <br><br>An internship<br><br>
-                        Applications Development IT Degree at CPUT 2023 and beyond
-                    </p>
+                  <video width="350px" height="450px" autoplay muted loop>
+                    <source src="./images/800kb.mp4" type="video/mp4">
+                    <source src="./images/800kb.mp4" type="video/ogg">
+                  Your browser does not support the video tag.
+                  </video>
+                    <!-- <img src="./images/Pic2.png"> -->
                 </div>
                 <div class="col-md-6" id="border-two">
-                    <h2 id="po" class="display-4">Currently</h2>
-                    <p id="po" class="lead">
-                        Completed Codespace Full Stack course (6 months front end) and 
-                        (3 months) backend throughout 2022<br><br>
-                        Completed android java development, c# and other various udemy courses 
-                        <br><br>
-                        Fundamentals of digital marketing google course<br>
-                        <br>
-                        <br>
-                        created a startup business, building websites freelance
+                    <h3>Education</h3>
+                    <p>
+                      
+                      High School Graduate <br>
+                      Electrical engineering N4<br>
+                      Ict in applications development diploma CPUT (current)
+
+                    </p>
+                    <h3>Other Skills</h3>
+                    <p>
+                      - created a few animated YouTube videos
+                      <br>
+                      <br>
+                      - Some experience in Adobe After effects, Illustrator, Photoshop
                     </p>
                 </div>    
             </div>
@@ -153,20 +166,18 @@
       <div id="lineh3"></div>
     </div>
 
-    <div id="lineTwo">
-
-    </div>
+   
 
     <div class="container" class="contactForm" id="contactForm">
         <h2 class="display-4" id="tellUsHeading">Contact Me</h2>
         <div class="row">
           <div class="col-md-12">
-            <form action="" method="POST" id="contactFormOne">
+            <form action="" method="" id="contactFormOne">
               <label class="form-label">Name</label>
               <input type="text" class="form-control" id="name" name="name" required>
     
               <label>Email</label>
-              <input type="email" class="form-control" id="emaill" name="email" required>
+              <input type="email" class="form-control" id="emaill"  placeholder="use the email icon at the bottom of the page instead." name="email" required>
     
               <label>Phone</label>
               <input type="tel" class="form-control" id="contactFormPhone" name="phone">
@@ -179,18 +190,40 @@
 
     <footer>
         <div>
-            <h2 class="display-4" id="contact">Contact me</h2>
-            <a href="mailto:example@gmail.com" style="text-decoration: none;">
-            <img src="images/gmail.png" id="mail" width="100px" height="100px">
+            <h2 class="display-4" id="contact">Contact And Portfolio</h2>
+            <ul id="lis">
+              <li>  <a href="mailto:joshuajohntwigg@gmail.com" style="text-decoration: none;">
+                <img src="images/zzzzzz.png" id="mail" >
+                </a></li>
+              <li> <a href="tel:+2796940259">
+                <img src="images/customPhoneIcon.png" id="phone" >
+                </a></li>
+              <li>  </a>
+                <a href="https://www.linkedin.com/in/josh-twigg-b61443267/" target="_blank">
+                  <img src="images/iconz.png" id="git" >
+                </a></li>
+              <li><a href="https://github.com/JoshuaTwigg?tab=repositories" target="_blank">
+                <img src="images/teszz.png" id="git" >
+              </a></li>
+            </ul>
+
+            <!-- <a href="mailto:example@gmail.com" style="text-decoration: none;">
+            <img src="images/zzzzzz.png" id="mail" >
             </a>
             <a href="tel:+2759604956">
-            <img src="images/telephone.png" id="phone" width="100px" height="100px">
+            <img src="images/customPhoneIcon.png" id="phone" >
             </a>
+            <a href="https://www.linkedin.com/in/josh-twigg-b61443267/" target="_blank">
+              <img src="images/iconz.png" id="git" >
+            </a>
+            <a href="https://github.com/JoshuaTwigg?tab=repositories" target="_blank">
+              <img src="images/teszz.png" id="git" >
+            </a> -->
             
-            <h2 class="display-4" id="portfolio2">My portfolio</h2>
+            <!-- <h2 class="display-4" id="portfolio2">My portfolio</h2>
             <a href="https://github.com/JoshuaTwigg?tab=repositories" target="_blank">
             <img src="images/github.png" id="git" width="90px" height="90px">
-            </a>
+            </a> -->
         </div>
     </footer>
 
