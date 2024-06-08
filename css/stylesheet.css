@@ -39,8 +39,8 @@ body{
     position: relative;
     background-color: black;
     color: white;
-  
-    padding-bottom: 900px;
+ 
+    padding-bottom: 970px;
     
 }
 
@@ -64,10 +64,10 @@ header h2{
     position: absolute;
     border-radius: 100px;
     opacity: 0.45;
-    top:40px;
-    right:3%;
-    max-width: 50%;
-    min-width: 50%;
+    right:6%;
+    top:100px;
+    max-width: 45%;
+    min-width: 45%;
 
 }
 
@@ -288,12 +288,15 @@ width: 95%;opacity: 0;
 
 
 footer{
+    
     margin-top:100px;
     background-color: black;
     color: white;
     padding:100px;
     
 }
+
+
 
 
 footer div img{
@@ -374,6 +377,7 @@ footer div img:hover{
         display:grid;
         grid-template-columns: auto auto;
     }
+    
 }
 
 
@@ -381,6 +385,23 @@ footer div img:hover{
     .galleryContainer{
         display: block;
     }
+
+    footer h2{
+        padding-left: 50px;
+        padding-right: 50px;
+        color: white;
+       
+        
+    }
+
+    footer span{
+        padding-left: 50px;
+    }
+  
+    footer div{
+       width:100%;
+    }
+    
 }
 
 
@@ -388,6 +409,21 @@ footer div img:hover{
     #lis li{
         display: block;
     }
+  
+  
+    footer div{
+       width:100%;
+    }
+
+    footer h2{
+        padding-left: 100px;
+        padding-right: 50px;
+
+        color: white;
+       
+        
+    }
+   
 }
 
 @media only screen and (max-width: 500px) {
@@ -399,5 +435,13 @@ footer div img:hover{
     .navbar-nav li{
     display:inline-block;
     margin-left:20px;
+}
+
+footer h2{
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+   
+    
 }
 }
